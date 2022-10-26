@@ -12,6 +12,7 @@ window.onload = function(){
 	tabla11 = document.getElementById('tabla11');
 	tabla12 = document.getElementById('tabla12');
 	contentBoton = document.getElementById("contentBoton");
+	tablas = document.querySelector('#tablas');
 }
 
 
@@ -40,5 +41,6 @@ function calcular(){
 	tabla12.innerText=pesoNuevo*0.70+"Kg";
 
 	contentBoton.innerHTML = `<input type="text" class="form-control border border-dark" id="pesoNuevo" value="`+pesoNuevo+`" placeholder="" onkeypress="keyp()">`;
+	tablas.classList.remove('d-none');
 
 }
